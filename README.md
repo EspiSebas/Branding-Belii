@@ -27,4 +27,4 @@ Los textos por cambiar están entre [corchetes]. La miniatura en `proyectos.html
 Funciona con respuestas predefinidas. Edita las preguntas/respuestas en `js/main.js` (objeto `BOT`). Para conectarlo a una IA real se necesita un servidor propio (no pongas claves de API en el navegador).
 
 ## Contacto
-El formulario abre el correo del usuario hacia `hola@belii.studio`. Para recibir mensajes directo, conéctalo a un servicio como Formspree.
+El formulario lee `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID` y `VITE_EMAILJS_PUBLIC_KEY` desde `.env` con Vite. Completa esos valores y ejecuta `npm install` y `npm run dev`; para publicar, ejecuta `npm run build` y despliega la carpeta `dist`. En el proveedor de hosting configura también las tres variables de entorno de producción.

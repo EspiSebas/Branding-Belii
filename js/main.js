@@ -1,8 +1,3 @@
-/* =========================================================
-   BELII — Scripts globales
-   1) Header (scroll + menú móvil)  2) Animaciones de aparición
-   3) Chatbot "Hablemos"            4) Formulario de contacto
-   ========================================================= */
 (function () {
   'use strict';
 
@@ -179,20 +174,4 @@
     });
   }
 
-  /* ---------- 4) Formulario de contacto (abre el correo del usuario) ---------- */
-  var cf = document.getElementById('contact-form');
-  if (cf) {
-    cf.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var f = new FormData(cf);
-      var subject = encodeURIComponent('Nueva idea para Belii — ' + (f.get('nombre') || ''));
-      var bodyTxt = encodeURIComponent(
-        'Nombre: ' + f.get('nombre') + '\nCorreo: ' + f.get('correo') +
-        '\nServicio: ' + f.get('servicio') + '\n\n' + f.get('mensaje'));
-      var ok = document.querySelector('.form-ok');
-      if (ok) ok.style.display = 'block';
-      window.location.href = 'mailto:hola@belii.studio?subject=' + subject + '&body=' + bodyTxt;
-      cf.reset();
-    });
-  }
 })();
