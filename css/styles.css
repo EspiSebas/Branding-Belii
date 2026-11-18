@@ -712,7 +712,7 @@ section {
 }
 
 .card.c3 .sp {
-  fill: var(--vino)
+  fill: var(--coral)
 }
 
 .card.c4 {
@@ -726,7 +726,7 @@ section {
 }
 
 .card.c4 .sp {
-  fill: var(--coral)
+  fill: var(--vino)
 }
 
 .card.c5 {
