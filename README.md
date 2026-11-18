@@ -28,3 +28,7 @@ Funciona con respuestas predefinidas. Edita las preguntas/respuestas en `js/main
 
 ## Contacto
 El formulario lee `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID` y `VITE_EMAILJS_PUBLIC_KEY` desde `.env` con Vite. Completa esos valores y ejecuta `npm install` y `npm run dev`; para publicar, ejecuta `npm run build` y despliega la carpeta `dist`. En el proveedor de hosting configura también las tres variables de entorno de producción.
+
+
+## Despliegue
+El despliegue del proyecto se realizó mediante la plataforma Vercel, donde se configuró su publicación y disponibilidad en línea. Adicionalmente, se adquirió el dominio personalizado belii.space a través de GoDaddy, el cual se vinculó correctamente con el proyecto alojado en Vercel, permitiendo acceder al sitio web mediante una dirección propia.
