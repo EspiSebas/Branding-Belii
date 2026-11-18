@@ -39,7 +39,7 @@
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(loopRibbons);
   else window.addEventListener('load', loopRibbons);
 
-  /* ---------- 2) Reveal ---------- */
+
   var items = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
